@@ -9,7 +9,7 @@ use ExtUtils::MakeMaker 6.31;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Todoist API',
+  'ABSTRACT' => 'IP Rental API',
   'AUTHOR' => 'Fayland Lam <fayland@gmail.com>',
   'BUILD_REQUIRES' => {},
   'CONFIGURE_REQUIRES' => {
@@ -23,7 +23,7 @@ my %WriteMakefileArgs = (
     'SOAP::Lite' => '0',
     'XML::Simple' => '0'
   },
-  'VERSION' => '0.01',
+  'VERSION' => '0.02',
   'test' => {
     'TESTS' => 't/*.t'
   }

@@ -1,10 +1,10 @@
 package WebService::IPRental;
 
 BEGIN {
-    $WebService::IPRental::VERSION = '0.01';
+    $WebService::IPRental::VERSION = '0.02';
 }
 
-# ABSTRACT: Todoist API
+# ABSTRACT: IP Rental API
 
 use strict;
 use warnings;
@@ -86,11 +86,11 @@ __END__
 
 =head1 NAME
 
-WebService::IPRental - Todoist API
+WebService::IPRental - IP Rental API
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -113,6 +113,8 @@ version 0.01
         print "IP:   " . $ipr->verboseReponseCode($resp->{IP}) . "\n";
         print "Port: " . $ipr->verboseReponseCode($resp->{Port}) . "\n";
         print "TTL:  " . $ipr->verboseReponseCode($resp->{TTL}) . "\n";
+        
+        # $ua->proxy(['http', 'https'], 'http://'. $resp->{IP} . ':' . $resp->{Port});
     } else {
         die 'Caught error: ' . $ipr->verboseReponseCode($resp->{Response});
     }

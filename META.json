@@ -1,5 +1,5 @@
 {
-   "abstract" : "Todoist API",
+   "abstract" : "IP Rental API",
    "author" : [
       "Fayland Lam <fayland@gmail.com>"
    ],
@@ -34,6 +34,6 @@
          "web" : "http://github.com/fayland/perl-WebService-IPRental"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
 

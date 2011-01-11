@@ -1,5 +1,5 @@
 ---
-abstract: 'Todoist API'
+abstract: 'IP Rental API'
 author:
   - 'Fayland Lam <fayland@gmail.com>'
 build_requires: {}
@@ -17,4 +17,4 @@ requires:
   XML::Simple: 0
 resources:
   repository: git://github.com/fayland/perl-WebService-IPRental.git
-version: 0.01
+version: 0.02

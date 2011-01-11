@@ -1,8 +1,8 @@
 NAME
-    WebService::IPRental - Todoist API
+    WebService::IPRental - IP Rental API
 
 VERSION
-    version 0.01
+    version 0.02
 
 SYNOPSIS
 DESCRIPTION
@@ -23,6 +23,8 @@ DESCRIPTION
             print "IP:   " . $ipr->verboseReponseCode($resp->{IP}) . "\n";
             print "Port: " . $ipr->verboseReponseCode($resp->{Port}) . "\n";
             print "TTL:  " . $ipr->verboseReponseCode($resp->{TTL}) . "\n";
+        
+            # $ua->proxy(['http', 'https'], 'http://'. $resp->{IP} . ':' . $resp->{Port});
         } else {
             die 'Caught error: ' . $ipr->verboseReponseCode($resp->{Response});
         }
